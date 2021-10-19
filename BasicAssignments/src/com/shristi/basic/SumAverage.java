@@ -7,14 +7,13 @@ public class SumAverage {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		Scanner input = new Scanner(System.in);
-		System.out.println("No of elements: ")
-		int number = Scanner.nextInt();
+		System.out.println("No of elements: ");
+		int number = input.nextInt();
 		int demo_values[] = new int[number];
 
-		
 		System.out.println("Enter the array values");
 		for (int i = 0; i < demo_values.length; i++) {
-			demo_values[i] = scan.nextInt();
+			demo_values[i] = input.nextInt();
 		}
 		// iterating
 
@@ -31,7 +30,7 @@ public class SumAverage {
 
 		System.out.println("The average : " + average);
 
-		scan.close();
+		input.close();
 	}
 
 }
