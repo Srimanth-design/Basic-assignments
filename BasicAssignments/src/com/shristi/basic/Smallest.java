@@ -6,29 +6,27 @@ public class Smallest {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		
+
 		Scanner input = new Scanner(System.in);
-		System.out.println("No of elements: ")
-		int number = Scanner.nextInt();
+		System.out.println("No of elements: ");
+		int number = input.nextInt();
 		int values[] = new int[number];
-		
+
 		// populating
 		System.out.println("Enter input array");// three numbered array
 		for (int i = 0; i < values.length; i++) {
-			values[i] = scan.nextInt();
+			values[i] = input.nextInt();
 		}
 		// the work
 
-		for (int i = 0; i < (values.length - 2); i++) {
-			if (values[i] < values[i + 1] && values[i] < values[i + 2]) {
-				System.out.println(values[i] + " is the smallest of the given array");
-			} else if (values[i + 1] < values[i + 2]) {
-				System.out.println(values[i + 1] + " is the smallest of the given array");
-			} else {
-				System.out.println(values[i + 2] + " is the smallest of the given array");
+		int smallest = values[0];
+		for (int i = 0; i < values.length; i++) {
+			if (smallest > values[i]) {
+				smallest = values[i];
 			}
 		}
-		scan.close();
+		System.out.println("Smallest is : " + smallest);
+		input.close();
 	}
 
 }
