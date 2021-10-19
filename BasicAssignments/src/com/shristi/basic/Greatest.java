@@ -17,9 +17,13 @@ public class Greatest {
 		 * 
 		 * System.out.println(great_number);
 		 */
-
-		Scanner scan = new Scanner(System.in);
-		int values[] = new int[3];
+		
+		Scanner input = new Scanner(System.in);
+		System.out.println("No of elements: ")
+		int number = Scanner.nextInt();
+		int values[] = new int[number];
+		
+		
 		// populating
 		System.out.println("Enter input array");// three numbered array
 		for (int i = 0; i < values.length; i++) {
